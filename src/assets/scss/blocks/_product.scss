@@ -1,0 +1,25 @@
+.productinfo__inner{
+    display: flex;
+    gap: 4.5rem;
+    padding-top: 10rem;
+}
+.thumbnails {
+    display: flex;
+    margin: 1.5rem auto 0;
+    padding: 0;
+    justify-content: space-between;
+  }
+  
+  .thumbnail {
+    width: 12.2rem;
+    height: 12.2rem;
+    overflow: hidden;
+    list-style: none;
+    margin: 0 3.6rem;
+    cursor: pointer;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+  }
