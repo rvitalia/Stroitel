@@ -34,7 +34,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    color: $light-color;
+    color: $dark-color;
 }
 
 .header__inner__widgets {
@@ -57,7 +57,7 @@
 }
 
 .active__input > .header__inner__widgets__item {
-    border-color: $light-color;
+    border-color: $dark-color;
 }
 
 .header__inner__widgets__search {
@@ -78,7 +78,7 @@
     color: $light-color;
 
     &::placeholder {
-        color: $light-color;
+        color: $dark-color;
     }
 }
 

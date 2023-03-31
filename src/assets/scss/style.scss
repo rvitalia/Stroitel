@@ -2,7 +2,9 @@
 @import 'blocks/vars';
 @import 'mixins';
 @import '../../../node_modules/swiper/swiper-bundle';
-@import '../../../node_modules/@splidejs/splide/dist/css/splide.min.css';
+@import '../../../node_modules/@splidejs/splide/dist/css/themes/splide-default.min';
+@import '../../../node_modules/@splidejs/splide/dist/css/splide-core.min';
+@import '../../../node_modules/@splidejs/splide/dist/css/splide.min';
 
 @import 'fonts';
 @import 'settings';

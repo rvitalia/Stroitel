@@ -1,25 +1,271 @@
-.productinfo__inner{
-    display: flex;
-    gap: 4.5rem;
-    padding-top: 10rem;
+.productinfo {
+  padding-top: 3.7rem;
+  padding-bottom: 9.6rem;
 }
+
+.productinfo__inner {
+  display: flex;
+  gap: 4.5rem;
+  padding-top: 10rem;
+}
+
+.productinfo__inner__left,
+.productinfo__inner__right {
+  width: 50%;
+}
+
+.splide__slide__main {
+  width: 694px;
+  height: 565px;
+  background: #EFEFEF;
+  border: 1px solid #000000;
+  @include flex-all-center;
+
+  &>img {
+    object-fit: cover;
+    width: 615px;
+    height: 410px;
+  }
+}
+
 .thumbnails {
-    display: flex;
-    margin: 1.5rem auto 0;
-    padding: 0;
-    justify-content: space-between;
+  display: flex;
+  margin: 1.5rem auto 0;
+  padding: 0 0 5.1rem;
+  justify-content: space-between;
+  max-width: 596px;
+
+}
+
+.thumbnail {
+  width: 12.2rem;
+  height: 12.2rem;
+  overflow: hidden;
+  list-style: none;
+  cursor: pointer;
+  background: #D9D9D9;
+  border: 1px solid #000000;
+  @include flex-all-center;
+
+  &:not(:last-child) {
+    margin-right: 3.6rem;
   }
-  
-  .thumbnail {
-    width: 12.2rem;
-    height: 12.2rem;
-    overflow: hidden;
-    list-style: none;
-    margin: 0 3.6rem;
-    cursor: pointer;
+}
+
+.splide__arrow {
+  top: 114%;
+  background: none;
+
+  &>svg {
+    fill: #76CD71;
+    width: 3.5rem;
+    height: 3.5rem;
   }
-  
-  .thumbnail img {
-    width: 100%;
-    height: auto;
+}
+
+.productinfo__inner__left__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0.7rem;
+}
+
+.productinfo__inner__left__data {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 58.7rem;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  // line-height: 30px;
+  padding-bottom: 1.3rem;
+  /* or 167% */
+
+  letter-spacing: -0.04em;
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.productinfo__inner__right__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  padding-bottom: 3.6rem;
+
+  color: #000000;
+}
+
+.productinfo__inner__right__data {
+  display: block;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 3.6rem;
+  letter-spacing: -0.04em;
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.productinfo__inner__right__size {
+  display: block;
+  width: 317px;
+  height: 42px;
+
+  border: 1px solid #D9D9D9;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1E1C1C;
+  padding-left: 1rem;
+  margin-bottom: 2.5rem;
+
+  &>option {
+    font-size: 1.8rem;
   }
+}
+
+.productinfo__inner__right__parametrs {
+  display: flex;
+  justify-content: space-between;
+  max-width: 31.7rem;
+  gap: 1.3rem;
+}
+
+.productinfo__inner__right__parametrs__height,
+.productinfo__inner__right__parametrs__width {
+  height: 5rem;
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #D9D9D9;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #525252;
+  padding-top: 0.4rem;
+
+  &>b {
+    padding-left: 1rem;
+
+  }
+}
+
+.productinfo__inner__right__parametrs__line {
+  width: 132px;
+  height: 1px;
+  border: 1px solid #D9D9D9;
+  text-align: center;
+}
+
+.productinfo__inner__right__dataprice {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  max-width: 47.4rem;
+}
+
+.productinfo__inner__right__dataprice__minus {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  letter-spacing: -0.04em;
+  cursor: pointer;
+  color: #4D4D4D;
+}
+
+.productinfo__inner__right__dataprice__count {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 30px;
+
+  @include flex-all-center;
+  letter-spacing: -0.04em;
+  margin: 0 0.7rem;
+
+  color: rgba(0, 0, 0, 0.7);
+  width: 90px;
+  height: 90px;
+  border: 1px solid #D9D9D9;
+}
+
+.productinfo__inner__right__dataprice__plus {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 30px;
+  padding-left: 0.5rem;
+  padding-right: 4.5rem;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+  color: #4D4D4D;
+  cursor: pointer;
+}
+
+.productinfo__inner__right__dataprice__price {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: right;
+}
+
+.productinfo__inner__right__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 43.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.productinfo__inner__right__battons__addbasket {
+  background: #76CD71;
+  color: #FFFFFF;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 2rem 6.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  transition: all 0.3s linear;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.productinfo__inner__right__buttons__favourites {
+  //cursor: pointer;
+  width: 51px;
+  height: 42px;
+}

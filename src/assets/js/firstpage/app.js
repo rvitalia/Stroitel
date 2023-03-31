@@ -10,18 +10,25 @@ const swiperhero = new Swiper('.swiper__hero', {
     },
 });
 
-const swiperadv = new Swiper('.swiper__adventages',{
+const swiperadv = new Swiper('.swiper__adventages', {
     modules: [Navigation],
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
+    },
 });
 
 
-let search = document.querySelector('#header__search');
-let widgets = document.querySelector('#widgets');
 
-search.addEventListener('click', ()=> {
-    widgets.classList.toggle('active__input');
-})
+// export function search() {
+//     let search = document.querySelector('#header__search');
+//     console.log(search);
+//     let widgets = document.querySelector('#widgets');
+//     console.log(widgets);
+
+//     search.addEventListener('click', () => {
+//         widgets.classList.toggle('active__input');
+//         console.log(widgets);
+//     })
+// }
+// search();
