@@ -167,11 +167,14 @@
   }
 }
 
-.productinfo__inner__right__parametrs__line {
+.productinfo__inner__right__parametrs__input {
   width: 132px;
-  height: 1px;
-  border: 1px solid #D9D9D9;
+  //height: 1px;
+  border: none;
+  border-bottom: 1px solid #D9D9D9;
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 0.8rem;
 }
 
 .productinfo__inner__right__dataprice {
