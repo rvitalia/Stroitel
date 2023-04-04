@@ -38,7 +38,7 @@
     background: #EFEFEF;
     border: 1px solid #000000;
     @include flex-all-center;
-  
+    border-radius: 20px;
 }
 
 .similar__inner__wrapper__item__subtitle {
