@@ -1,0 +1,116 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FFFFFF;
+}
+
+.container__small {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__inner {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 5.5rem 10.2rem 5.5rem 5.9rem;
+    position: relative;
+}
+
+.modal__inner__close {
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 4.3rem;
+    z-index: 1;
+}
+
+.modal__inner__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+
+    color: #3C3636;
+    margin-bottom: 5rem;
+}
+
+.modal__inner__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__inner__form__input {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 485px;
+    height: 56px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    letter-spacing: -0.04em;
+    margin: 0 auto 2rem;
+
+    color: rgba(0, 0, 0, 0.3);
+
+    &::placeholder {
+        padding-left: 1.5rem;
+        color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+.modal__inner__form__input+.modal__inner__form__input {
+    margin: 0 auto 7.2rem;
+}
+
+.modal__inner__form__button {
+    width: 309px;
+    height: 63px;
+    background: #76CD71;
+    border-radius: 50px;
+    margin: 0 auto 3rem;
+    border: none;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.modal__inner__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    letter-spacing: -0.04em;
+
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.modal__inner__text__politics {
+    color: #41743E;
+}
