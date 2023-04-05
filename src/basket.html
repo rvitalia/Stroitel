@@ -13,42 +13,67 @@ title: Document | Home
                 <h2 class="basket__inner__title">Корзина</h2>
                 <div class="basket__inner__container">
                     <div class="basket__inner__container__left">
-                        <div class="basket__inner__container__left__item">
-                            <div class="basket__inner__container__left__item__delete"
-                                style="background-image: url(./assets/images/svg/Close.svg);"></div>
-                            <div class="basket__inner__container__left__item__preview">
-                                <img src="./assets/images/products/blocksmall2.png" alt="block">
+
+                        <div class="basket__inner__container__left__items">
+
+                            <!-- ===========================item====================================== -->
+
+                            <div class="basket__inner__container__left__item">
+                                <div class="basket__inner__container__left__item__firstblock">
+                                    <div class="basket__inner__container__left__item__delete"
+                                        style="background-image: url(./assets/images/svg/Close.svg);"></div>
+                                    <div class="basket__inner__container__left__item__preview">
+                                        <img src="./assets/images/products/blocksmall2.png" alt="block">
+                                    </div>
+                                    <div class="basket__inner__container__left__item__description">
+                                        <span class="basket__inner__container__left__item__name">Полистиролбетон</span>
+                                        <span class="basket__inner__container__left__item__dimensions">125х63х85</span>
+                                    </div>
+                                </div>
+                                <div class="basket__inner__container__left__item__counter">
+                                    <div class="basket__inner__container__left__item__counter__minus">-</div>
+                                    <div class="basket__inner__container__left__item__counter__digit">1</div>
+                                    <div class="basket__inner__container__left__item__counter__plus">+</div>
+                                </div>
+                                <span class="basket__inner__container__left__item__price">9 900 р.</span>
                             </div>
-                            <div class="basket__inner__container__left__item__description">
-                                <span class="basket__inner__container__left__item__name">Полистиролбетон</span>
-                                <span class="basket__inner__container__left__item__dimensions"></span>
-                            </div>
-                            <div class="basket__inner__container__left__item__counter">
-                                <div class="basket__inner__container__left__item__counter__minus">-</div>
-                                <div class="basket__inner__container__left__item__counter__digit">1</div>
-                                <div class="basket__inner__container__left__item__counter__plus">+</div>
-                            </div>
-                            <span class="basket__inner__container__left__item__price">9 900 р.</span>
+
+                            <!-- ===========================end item====================================== -->
+
+
                         </div>
-                        <hr class="basket__inner__container__left__line">
+                        <hr class="basket__inner__container__left__line__horisontal">
                     </div>
                     <div class="basket__inner__container__right">
-                        <div class="basket__inner__container__right__title">
-                            <h3 class="basket__inner__container__right__text">Общая сумма</h3>
-                            <hr class="basket__inner__container__right__line">
-                        </div>
-                        <div class="basket__inner__container__right__items">
-                            <dl class="basket__inner__container__right__items__item">
-                                <dt class="basket__inner__container__right__items__item__title"> Полистеролбетон</dt>
-                                <dd class="basket__inner__container__right__items__item__price">9 900 p.</dd>
+                        <hr class="basket__inner__container__right__line__vertical">
+                        <div class="basket__inner__container__right__column">
+
+                            <div class="basket__inner__container__right__title">
+                                <h3 class="basket__inner__container__right__text">Общая сумма</h3>
+                                <hr class="basket__inner__container__right__line">
+                            </div>
+                            <div class="basket__inner__container__right__items">
+
+                            <!-- ===========================item====================================== -->
+
+
+                                <dl class="basket__inner__container__right__items__item">
+                                    <dt class="basket__inner__container__right__items__item__title"> Полистеролбетон
+                                    </dt>
+                                    <dd class="basket__inner__container__right__items__item__price">9 900 p.</dd>
+                                </dl>
+
+
+                            <!-- ===========================end item====================================== -->
+
+                            </div>
+                            <hr class="basket__inner__container__right__line__bottom">
+                            <dl class="basket__inner__container__right__result">
+                                <dt class="basket__inner__container__right__result__all">Всего</dt>
+                                <dd class="basket__inner__container__right__result__allprice">9 900 p.</dd>
                             </dl>
+                            <button class="basket__inner__container__right__result__checkout">Оформить заказ</button>
                         </div>
-                        <div class="basket__inner__container__right__line"></div>
-                        <dl class="basket__inner__container__right__result">
-                            <dt class="basket__inner__container__right__result__all">Всего</dt>
-                            <dd class="basket__inner__container__right__result__allprice">9 900 p.</dd>
-                        </dl>
-                        <button class="basket__inner__container__right__result__checkout">Оформить заказ</button>
                     </div>
                 </div>
             </div>
