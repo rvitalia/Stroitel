@@ -312,6 +312,8 @@
   white-space: nowrap;
   border: none;
   transition: all 0.3s linear;
+  border-radius: 50px;
+
 
   &:hover {
     transform: scale(1.02);
@@ -322,6 +324,7 @@
   //cursor: pointer;
   width: 51px;
   height: 42px;
+  max-height: none;
 }
 
 .red {

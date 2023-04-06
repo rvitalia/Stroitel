@@ -6,11 +6,12 @@ search.addEventListener('click', () => {
 });
 
 let favourites = document.querySelectorAll('#favourite');
-console.log(favourites);
+// console.log(favourites);
+
 
 favourites.forEach(element => {
   element.addEventListener('click', ()=>{
-    console.log(element);
-    element.classList.toggle('red'); 
+     console.log(element);
+    element.classList.toggle('nored'); 
   })
 });
