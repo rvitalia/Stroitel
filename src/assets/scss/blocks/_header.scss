@@ -28,16 +28,21 @@
  
 }
 
-.header__inner__nav__item {
+.header__inner__nav > a {
     font-family: 'OpenSans';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
     color: #070707;
-    
+    transition: all 0.3s linear;
+
     &:not(:last-child){
         margin-right: 8.6rem;
+    }
+
+    &:hover{
+        color: $accent-color;
     }
 }
 
@@ -98,6 +103,13 @@
     margin-right: 0.9rem;
     fill: none;
     cursor: pointer;
+    stroke:black;
+    transition: all 0.3s linear;
+
+    &:hover{
+        stroke: $accent-color;
+        
+    }
 }
 
 .header__inner__widgets__favorites {
@@ -106,6 +118,11 @@
     max-height: 2.2rem;
     cursor: pointer;
     stroke: black;
+    transition: all 0.3s linear;
+
+    &:hover{
+        stroke: $accent-color;
+    }
 }
 
 .header__inner__widgets__basket {
@@ -113,6 +130,12 @@
     height: 100%;
     max-height: 1.813rem;
     cursor: pointer;
+    stroke: black;
+    transition: all 0.3s linear;
+
+    &:hover{
+        stroke: $accent-color;
+    }
 }
 .header__inner__widgets__icon{
     max-width: 2.6rem;

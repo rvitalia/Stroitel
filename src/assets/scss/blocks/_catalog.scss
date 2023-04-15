@@ -1,0 +1,165 @@
+.catalog {
+    padding-bottom: 10rem;
+}
+
+.catalog__inner {}
+
+.catalog__inner__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 86px;
+    line-height: 104px;
+    color: $accent-color;
+    // border: 1px solid #000000;
+    max-width: 35rem;
+    margin-bottom: -7rem;
+    text-shadow: 1px 0 1px #000,
+        0 1px 1px #000,
+        -1px 0 1px #000,
+        0 -1px 1px #000;
+}
+
+.swiper {
+    padding-top: 11.2rem;
+}
+
+.swiper__catalog {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper__slide__inner {
+    border: 2px solid #000000;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.1rem;
+}
+
+.swiper__slide__inner__favourites {
+    margin-left: auto;
+    margin-top: 1.6rem;
+    margin-right: 1.6rem;
+    width: 2.2rem;
+}
+
+
+.swiper__slide__inner__image {
+    margin-bottom: 1.03rem;
+}
+
+.swiper__slide__inner__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+
+    color: #3C3636;
+}
+
+.swiper__slide__inner__price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 46px;
+    color: #3C3636;
+    margin-bottom: 4.1px;
+}
+
+.swiper__slide__inner__info {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.swiper__slide__inner__list {
+    display: block;
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    letter-spacing: -0.04em;
+
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 257px;
+    text-align: left;
+    font-weight: 600;
+    margin: 4.9px 0 5px;
+
+    &-last {
+        margin-bottom: 7.5rem;
+    }
+}
+
+.swiper__slide__inner__list>b {
+    font-weight: 700;
+}
+
+.swiper__slide__inner__addbasket {
+    display: block;
+    border: 2px solid $accent-color;
+    border-radius: 50px;
+    max-width: 225px;
+    background-color: transparent;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.045em;
+    color: $accent-color;
+    margin: 0 auto;
+    padding: 1.3rem 2.1rem 1.6rem 2.2rem;
+    margin-bottom: 3.21rem;
+    white-space: nowrap;
+}
+
+.swiper-catalog-prev {
+    top: 6.5rem;
+    right: 7rem;
+    left: auto;
+
+    &>svg {
+        display: block;
+        width: 6.5rem;
+        height: 6.6rem;
+        transition: all 0.3s linear;
+
+        &:hover {
+            fill: $accent-color;
+        }
+    }
+
+    &::after {
+        content: none;
+    }
+}
+
+.swiper-catalog-next {
+    top: 6.5rem;
+
+
+    &>svg {
+        width: 6.5rem;
+        height: 6.5rem;
+        transition: all 0.3s linear;
+
+        &:hover {
+            fill: $accent-color;
+        }
+    }
+
+    &::after {
+        content: none;
+    }
+}

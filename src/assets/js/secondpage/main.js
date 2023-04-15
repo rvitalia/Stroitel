@@ -1,4 +1,5 @@
 import { Splide } from "@splidejs/splide";
+import { searchInput } from "../firstpage/search";
 
 var splide = new Splide('#main-carousel', {
   // width: 694,
@@ -43,12 +44,7 @@ splide.mount();
 
 
 
-let search = document.querySelector('#header__search');
-let widgets = document.querySelector('#widgets');
-
-search.addEventListener('click', () => {
-  widgets.classList.toggle('active__input');
-});
+searchInput();
 
 let favourites = document.querySelectorAll('#favourite');
 // console.log(favourites);

@@ -1,5 +1,5 @@
 .hero {
-    max-height: 59.8rem;
+    max-height: 61.8rem;
     overflow: hidden;
 }
 
@@ -54,9 +54,23 @@
     border-radius: 42px;
     cursor: pointer;
     margin-bottom: 4.9rem;
+    transition: all 0.3s linear;
+
+    &:hover{
+        background-color: black;
+        color: $accent-color;
+        border-color: $accent-color;
+    }
+
 }
 .hero__inner__left__buttons__button + .hero__inner__left__buttons__button {
     margin-left: 2.1rem;
+
+    &:hover{
+        background-color: $accent-color;
+        color: white;
+        border-color: transparent;
+    }
 }
 
 

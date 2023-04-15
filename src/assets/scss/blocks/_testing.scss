@@ -1,0 +1,70 @@
+.testing {
+    padding: 3.1rem 0 7.5rem;
+}
+
+.container {}
+
+.testing__inner {}
+
+.testing__inner__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 86px;
+    line-height: 104px;
+    color: #FFFFFF;
+    margin-bottom: 5rem;
+}
+
+.testing__inner__documents {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 6rem;
+}
+
+.testing__inner__documents__item {
+    border-radius: 2rem;
+    width: 360px;
+    height: 573px;
+    border: 1px solid $accent-color;
+}
+
+.testing__inner__tests {
+    display: flex;
+    gap: 2rem;
+}
+
+.testing__inner__tests__item {}
+
+.adventages__video__container {}
+
+.testing__inner__tests__item__container {}
+
+.testing__inner__tests__item__container__video {}
+
+.testing__inner__tests__item__container__present {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 48.6rem;
+    height: 31.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+
+    &>h6 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 31px;
+        color: #FFFFFF;
+        margin-right: auto;
+        margin-left: 2rem;
+        padding-top: 5rem;
+    }
+}
+
