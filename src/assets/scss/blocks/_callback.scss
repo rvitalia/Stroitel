@@ -1,4 +1,7 @@
-.callback {}
+.callback {
+    padding-bottom: 5rem;
+}
+
 
 .callback__inner {}
 
@@ -29,8 +32,9 @@
 }
 
 .callback__inner__wrapper__img__left {
-    width: 400px;
-    height: 43rem;
+    width: 369px;
+    height: 30.4rem;
+    object-fit: contain;
 }
 
 .callback__inner__wrapper__form {
@@ -39,6 +43,7 @@
     max-width: 124.2rem;
     margin-top: 3.5rem;
     gap: 2.3rem;
+    align-items: center;
 }
 
 
@@ -47,23 +52,60 @@
     border-radius: 20px;
     width: 609px;
     height: 56px;
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+
+    &::placeholder {
+        font-family: 'OpenSans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        /* identical to box height, or 144% */
+
+        letter-spacing: -0.04em;
+
+        color: rgba(0, 0, 0, 0.3);
+        padding-left:  1.7rem;
+    }
 }
+
 
 .callback__inner__wrapper__form__agreement {
-    
-font-family: 'OpenSans';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 26px;
-/* identical to box height, or 162% */
 
-letter-spacing: -0.04em;
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
 
-color: rgba(0, 0, 0, 0.7);
+    letter-spacing: -0.04em;
+
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: underline;
+
+    &>b {
+        color: $accent-color;
+    }
 }
 
-.callback__inner__wrapper__form__button {}
+.callback__inner__wrapper__form__button {
+    background: $accent-color;
+    border-radius: 20px;
+    padding: 2rem 9.7rem;
+    margin-left: auto;
+    color: white;
+    border: none;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #000000;
+        color: $accent-color;
+    }
+}
 
 .callback__inner__wrapper__title {
     font-family: 'Inter';
@@ -73,14 +115,79 @@ color: rgba(0, 0, 0, 0.7);
     line-height: 41px;
     text-align: center;
     max-width: 779px;
-    
+    margin: 0 auto;
     color: #3C3636;
+    margin-bottom: 5rem;
 }
 
-.callback__inner__wrapper__container {}
+.callback__inner__part__bottom {
+    display: flex;
+    justify-content: space-between;
+}
 
-.callback__inner__wrapper__datalist {}
+.callback__inner__wrapper__img__left {
+    display: flex;
+    flex-direction: column;
+}
 
-.calback__inner__wrapper__datalist__profile {}
+.callback__inner__wrapper__bottom__left,
+.callback__inner__wrapper__bottom__right {
+    max-width: 48%;
+    min-width: 70rem;
+}
+
+.callback__inner__wrapper__datalist {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+
+
+    &>dt {
+        font-family: 'OpenSans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        /* identical to box height, or 162% */
+
+        letter-spacing: -0.04em;
+        white-space: nowrap;
+        color: #000000;
+
+    }
+
+    &>dd {
+        font-family: 'OpenSans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        /* identical to box height, or 162% */
+
+        letter-spacing: -0.04em;
+
+        color: #000000;
+    }
+}
+
+
+
+.calback__inner__wrapper__datalist__profile {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    letter-spacing: -0.04em;
+
+    color: #000000;
+
+    &>b {
+        color: $accent-color;
+    }
+}
 
 .callback__inner__wrapper__img__right {}

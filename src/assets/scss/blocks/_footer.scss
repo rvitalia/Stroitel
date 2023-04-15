@@ -55,6 +55,10 @@ footer {
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 1.7rem;
+    transition: all 0.3s linear;
+    &:hover{
+        color: $accent-color;
+    }
 
     &:last-child{
         padding-bottom: 0;
