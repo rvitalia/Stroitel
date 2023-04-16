@@ -39,14 +39,16 @@
     margin-bottom: 4.9rem;
 }
 
+
+
 .hero__inner__left__buttons__button {
-    border: 2px solid #000000;
+    border: 2px solid black;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-
+    background-color: transparent;
     letter-spacing: -0.045em;
 
     color: #000000;
@@ -56,17 +58,28 @@
     margin-bottom: 4.9rem;
     transition: all 0.3s linear;
 
-    &:hover{
-        background-color: black;
+    &:hover {
+        background-color: white;
         color: $accent-color;
         border-color: $accent-color;
     }
 
 }
-.hero__inner__left__buttons__button + .hero__inner__left__buttons__button {
+
+.hero__inner__left__buttons__button__accent {
+    background: $accent-color;
+    padding: 1.8rem 4.3rem;
+    border: 1px solid $accent-color;
+
+    &:hover {
+        border: 1px solid $accent-color;
+    }
+}
+
+.hero__inner__left__buttons__button+.hero__inner__left__buttons__button {
     margin-left: 2.1rem;
 
-    &:hover{
+    &:hover {
         background-color: $accent-color;
         color: white;
         border-color: transparent;
@@ -74,11 +87,7 @@
 }
 
 
-.hero__inner__left__buttons__button__accent {
-    background: $accent-color;
-    padding: 1.8rem 4.3rem;
-    border: none;
-}
+
 
 .hero__inner__right {
     width: 33.3%;
@@ -90,5 +99,5 @@
     position: relative;
     z-index: -1;
     margin: -8rem -1rem -1rem -14rem;
-   // @include bg-cover;
+    // @include bg-cover;
 }

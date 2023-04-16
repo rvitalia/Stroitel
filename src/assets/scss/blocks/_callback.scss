@@ -106,7 +106,7 @@
     padding: 2rem 9.7rem;
     margin-left: auto;
     color: white;
-    border: none;
+    border: 1px solid $accent-color;
     transition: all 0.3s linear;
     cursor: pointer;
     font-family: 'Inter';
@@ -117,7 +117,7 @@
     letter-spacing: -0.045em;
 
     &:hover {
-        background-color: #000000;
+        background-color: white;
         color: $accent-color;
     }
 }
