@@ -1,13 +1,18 @@
 .modal {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
-
+    opacity: 0;
     width: 100%;
     height: 100vh;
-
+    transition: all 0.3s linear;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FFFFFF;
+}
+
+.modalcallback {
+    display: block;
 }
 
 .container__small {
@@ -33,6 +38,17 @@
     top: 1.5rem;
     right: 4.3rem;
     z-index: 1;
+
+    &>svg {
+        width: 29px;
+        height: 29px;
+        stroke: black;
+        transition: all 0.3s linear;
+
+        &:hover {
+            stroke: $accent-color;
+        }
+    }
 }
 
 .modal__inner__title {
@@ -63,20 +79,24 @@
     font-size: 18px;
     line-height: 26px;
     /* identical to box height, or 144% */
-
     letter-spacing: -0.04em;
     margin: 0 auto 2rem;
-
     color: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s linear;
 
     &::placeholder {
         padding-left: 1.5rem;
         color: rgba(0, 0, 0, 0.3);
     }
+
+    &:focus {
+        outline: none;
+        border: 2px solid $accent-color;
+    }
 }
 
 .modal__inner__form__input+.modal__inner__form__input {
-    margin: 0 auto 7.2rem;
+    margin: 0 auto 2rem;
 }
 
 .modal__inner__form__button {
@@ -86,15 +106,22 @@
     border-radius: 50px;
     margin: 0 auto 3rem;
     border: none;
+    border: 1px solid $accent-color;
+
 
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-
+    transition: all 0.3s linear;
     color: #FFFFFF;
     cursor: pointer;
+
+    &:hover {
+        background-color: white;
+        color: $accent-color;
+    }
 }
 
 .modal__inner__text {
@@ -113,4 +140,36 @@
 
 .modal__inner__text__politics {
     color: #41743E;
+}
+
+.modal__inner__form__calltime {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 1.3rem;
+}
+
+.modal__inner__form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 23.3rem;     
+    margin: 0 auto 3rem;
+}
+
+.date {
+    max-width: 10.7rem;
+    //border-radius: 0;
+
+    &::placeholder{
+        text-align: center;
+        padding-left: 0;
+    }
 }

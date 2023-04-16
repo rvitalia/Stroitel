@@ -6,13 +6,20 @@ footer {
 
 .footer__inner {
     display: flex;
-    justify-content: space-between;
     align-items: start;
     padding-top: 4.2rem;
     font-family: 'Open Sans';
     color: #000000;
     font-style: normal;
     padding-bottom: 3.4rem;
+    width: 100%;
+}
+
+.footer__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 23rem;
 }
 
 .footer__inner__column {
@@ -36,6 +43,12 @@ footer {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
+    white-space: nowrap;
+    transition: all 0.3s linear;
+
+    &:hover{
+        color: $accent-color;
+    }
 }
 
 .footer__inner__column__title {

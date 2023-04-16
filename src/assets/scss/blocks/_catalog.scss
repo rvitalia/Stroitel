@@ -122,6 +122,13 @@
     padding: 1.3rem 2.1rem 1.6rem 2.2rem;
     margin-bottom: 3.21rem;
     white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    &:hover{
+        background-color: $accent-color;
+        color: white;
+    }
 }
 
 .swiper-catalog-prev {
