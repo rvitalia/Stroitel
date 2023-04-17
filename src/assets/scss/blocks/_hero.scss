@@ -1,6 +1,10 @@
 .hero {
     max-height: 61.8rem;
     overflow: hidden;
+
+    @include small-tablet{
+        max-height: none;
+    }
 }
 
 .hero__inner {
@@ -9,6 +13,14 @@
 
 .hero__inner__left {
     width: 66.6%;
+
+    @include tablet{
+        width: 75%;
+    }
+
+    @include small-tablet{
+        width: 100%;
+    }
 }
 
 .hero__inner__left__title {
@@ -20,6 +32,37 @@
     margin-top: 13.9rem;
     color: #000000;
 
+    @include fhd-desktop {
+        font-size: 4.5rem;
+    }
+
+    @include big-desktop {
+        font-size: 3.9rem;
+        margin-top: 10rem;
+    }
+
+    @include for-desktop{
+        margin-top: 7rem;
+        font-size: 3.3rem;
+    }
+    @include tablet{
+        font-size: 2.8rem;
+        line-height: 1.7;
+    }
+    @include small-tablet{
+        text-align: center;
+    }
+}
+
+.hero__inner__img__mobile{
+    display: none;
+    margin: 0 auto;
+
+    @include small-tablet{
+        display: block;
+        width: 35rem;
+        height: auto;
+    }
 }
 
 .hero__inner__left__text {
@@ -32,11 +75,43 @@
     letter-spacing: -0.04em;
     margin-top: 4.9rem;
     color: rgba(0, 0, 0, 0.9);
+
+    @include fhd-desktop {
+        font-size: 2.2rem;
+        margin-right: 1rem;
+    }
+
+    @include big-desktop {
+        max-width: 71rem;
+    }
+    @include for-desktop{
+        font-size: 1.8rem;
+        max-width: auto;
+    }
+    @include tablet{
+        font-size: 1.6rem;
+    }
+    @include small-tablet{
+        margin-top: -2rem;
+        max-width: none;
+        text-align: center;
+    }
+    
 }
 
 .hero__inner__left__buttons {
     margin-top: 11rem;
     margin-bottom: 4.9rem;
+
+    @include tablet{
+        margin-top: 4rem;
+    }
+
+    @include small-tablet{
+        margin-top: 2rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
 }
 
 
@@ -64,6 +139,14 @@
         border-color: $accent-color;
     }
 
+    @include for-desktop{
+        font-size: 1.5rem;
+        padding: 1.5rem 5.5rem;
+    }
+    @include mini-mobile{
+        margin-bottom: 1.5rem;
+    }
+
 }
 
 .hero__inner__left__buttons__button__accent {
@@ -84,6 +167,10 @@
         color: white;
         border-color: transparent;
     }
+
+    @include mini-mobile{
+        margin: 1rem auto 0;
+    }
 }
 
 
@@ -91,6 +178,14 @@
 
 .hero__inner__right {
     width: 33.3%;
+
+    @include tablet{
+        width: 25%;
+    }
+
+    @include small-tablet{
+        display: none;
+    }
 }
 
 .hero__inner__right__img {
@@ -99,5 +194,17 @@
     position: relative;
     z-index: -1;
     margin: -8rem -1rem -1rem -14rem;
-    // @include bg-cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+
+    @include for-desktop{
+        height: 70rem;
+        margin-top: -2rem;
+    }
+
+    @include tablet{
+        height: 54rem;
+    }
 }

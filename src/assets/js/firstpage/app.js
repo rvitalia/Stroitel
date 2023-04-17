@@ -1,4 +1,5 @@
 import Swiper, { Pagination, Navigation } from 'swiper';
+import { hoverVideoadventages, hoverVideotesting } from './hovervideo';
 import { modalopen } from './modal';
 
 import { searchInput } from "./search";
@@ -24,9 +25,7 @@ function modalopenOnce (){
     window.addEventListener('scroll',()=>{
         let posTop = window.pageYOffset;
 
-        console.log(triggerPos);
-        console.log(posTop);
-        console.log(posTop > triggerPos && flagOpen != true);
+       
         if (posTop > triggerPos && flagOpen != true){
             flagOpen = true;
             buttonModal.click();
@@ -38,6 +37,6 @@ function modalopenOnce (){
 searchInput();
 modalopen();
 modalopenOnce ();
-
-
+hoverVideoadventages();
+hoverVideotesting();
 

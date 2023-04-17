@@ -11,7 +11,17 @@
     @content;
   }
 }
+@mixin fhd-desktop {
+  @media (max-width: (1620px)) {
+    @content;
+  }
+}
 
+@mixin big-tablet {
+  @media (max-width: (1020px)) {
+    @content;
+  }
+}
 @mixin tablet {
   @media (max-width: (992px)) {
     @content;
@@ -26,6 +36,11 @@
 
 @mixin mobile {
   @media (max-width: (576px)) {
+    @content;
+  }
+}
+@mixin mini-mobile {
+  @media (max-width: (430px)) {
     @content;
   }
 }

@@ -1,5 +1,5 @@
 .favourites {
-    padding-top: 17.9rem;
+    padding-top: 8rem;
 }
 .favourites__inner{
     padding-bottom: 20rem;;
@@ -37,6 +37,13 @@
     padding: 2.1rem 0;
     cursor: pointer;
     color: #76CD71;
+    background-color: transparent;
+    transition: 0.3s linear;
+
+    &:hover{
+        color: white;
+        background-color: $accent-color;
+    }
 }
 .nored{
     fill: none;

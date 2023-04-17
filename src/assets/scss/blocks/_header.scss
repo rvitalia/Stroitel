@@ -14,21 +14,61 @@
     border-bottom: 2px solid #000000;
 }
 
-.header__inner__logo {
+.header__inner__logo,
+.header__inner__logo__link {
     width: 100%;
     max-width: 17.3rem;
     height: 7rem;
     @include bg-cover;
+    cursor: pointer;
+
+    @include for-desktop {
+        display: none;
+    }
+}
+
+.header__inner__logo__link{
+    @include small-tablet {
+        display: block;
+        height: 3.9rem;
+        margin-left: 3rem;
+    }
+}
+.header__inner__logomobile{
+    display: none;
+    width: 9.7rem;
+    height: 3.9rem;
+
+    @include small-tablet {
+        display: block;
+    }
+
+}
+
+.header__inner__burger {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin: 0 3.4rem 0 auto;
+    transition: all 0.3s linear;
+
+    @include small-tablet {
+        display: block;
+    }
+
+    &:hover{
+        transform: scale(1.15);
+    }
 }
 
 .header__inner__nav {
     margin: 3.8rem 0;
     display: flex;
     justify-content: space-between;
- 
+    max-height: 2.5rem;
 }
 
-.header__inner__nav > a {
+.header__inner__nav>a {
     font-family: 'OpenSans';
     font-style: normal;
     font-weight: 600;
@@ -36,13 +76,30 @@
     line-height: 25px;
     color: #070707;
     transition: all 0.3s linear;
+    white-space: nowrap;
 
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-right: 8.6rem;
+
+        @include big-desktop {
+            margin-right: 3rem;
+        }
+
+        @include tablet {
+            margin-right: 1.5rem;
+        }
     }
 
-    &:hover{
+    &:hover {
         color: $accent-color;
+    }
+
+    @include tablet {
+        font-size: 1.6rem;
+    }
+
+    @include small-tablet {
+        display: none;
     }
 }
 
@@ -52,6 +109,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include small-tablet {
+        display: none;
+    }
 }
 
 .header__inner__widgets__item {
@@ -65,7 +126,7 @@
     transition: all 0.3s linear;
 }
 
-.active__input > .header__inner__widgets__item {
+.active__input>.header__inner__widgets__item {
     border-color: $dark-color;
 }
 
@@ -83,7 +144,7 @@
     max-width: 12rem;
     margin-right: 4.5rem;
     transition: all 0.3s linear;
-    outline: 0 ;
+    outline: 0;
     color: $light-color;
 
     &::placeholder {
@@ -91,7 +152,7 @@
     }
 }
 
-.active__input  .header__inner__widgets__search {
+.active__input .header__inner__widgets__search {
     opacity: 1;
     color: black;
 }
@@ -103,12 +164,12 @@
     margin-right: 0.9rem;
     fill: none;
     cursor: pointer;
-    stroke:black;
+    stroke: black;
     transition: all 0.3s linear;
 
-    &:hover{
+    &:hover {
         stroke: $accent-color;
-        
+
     }
 }
 
@@ -120,7 +181,7 @@
     stroke: black;
     transition: all 0.3s linear;
 
-    &:hover{
+    &:hover {
         stroke: $accent-color;
     }
 }
@@ -133,11 +194,12 @@
     stroke: black;
     transition: all 0.3s linear;
 
-    &:hover{
+    &:hover {
         stroke: $accent-color;
     }
 }
-.header__inner__widgets__icon{
+
+.header__inner__widgets__icon {
     max-width: 2.6rem;
     @include flex-all-center;
 }

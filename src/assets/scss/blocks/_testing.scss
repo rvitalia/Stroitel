@@ -2,8 +2,6 @@
     padding: 3.1rem 0 7.5rem;
 }
 
-.container {}
-
 .testing__inner {}
 
 .testing__inner__title {
@@ -27,20 +25,42 @@
     width: 360px;
     height: 573px;
     border: 1px solid $accent-color;
+    position: relative;
+
+    &::after,  &::before{
+        position: absolute;
+        border-radius: 2rem;
+        top: -2px;
+        left: -2px;
+        z-index: -1;
+        content: '';
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        background: linear-gradient(45deg,#76CD71,#FFFFFF,#CBECCA);
+        animation: animate 20s linear infinite;
+    }
+    &::after{
+        filter: blur(20px);
+    }
 }
+
 
 .testing__inner__tests {
     display: flex;
     gap: 2rem;
 }
 
-.testing__inner__tests__item {}
+.testing__inner__tests__item {
+
+}
 
 .adventages__video__container {}
 
 .testing__inner__tests__item__container {}
 
-.testing__inner__tests__item__container__video {}
+.testing__inner__tests__item__container__video {
+    cursor: pointer;
+}
 
 .testing__inner__tests__item__container__present {
     display: flex;
@@ -53,8 +73,7 @@
     top: 0;
     left: 0;
     z-index: 1;
-    cursor: pointer;
-
+    pointer-events: none;
 
     &>h6 {
         font-family: 'Inter';
@@ -65,7 +84,10 @@
         color: #FFFFFF;
         margin-right: auto;
         margin-left: 2rem;
-        padding-top: 5rem;
+        padding-top: 2rem;
     }
+}
+.testing__inner__tests__item__container__present__bg{
+    margin-top: 4rem;
 }
 

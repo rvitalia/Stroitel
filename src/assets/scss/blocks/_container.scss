@@ -4,6 +4,10 @@
     width: calc($index * 60);
     padding: 0 1.5rem;
     margin: 0 auto;
+
+    @include big-desktop{
+        width: 100%;
+    }
 }
 .container__small{
     max-width: 74rem;

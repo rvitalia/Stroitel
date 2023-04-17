@@ -1,10 +1,16 @@
 .basket {}
 
 .basket__wrapper {
-    padding-top: 11.7rem;
+    padding-top: 1.3rem;
 }
 
-.productinfo__inner__back {}
+.productinfo__inner__back {
+    transition: all 0.3s linear;
+
+    &:hover{
+        color: $accent-color;
+    }
+}
 
 .basket__inner {}
 
@@ -114,6 +120,11 @@
     letter-spacing: -0.04em;
     color: #4D4D4D;
     cursor: pointer;
+    transition: all 0.3s linear;
+
+    &:hover{
+        color: $accent-color;
+    }
 }
 
 .basket__inner__container__left__item__counter__digit {
@@ -157,7 +168,7 @@
 }
 
 .basket__inner__container__right__line__vertical {
-    border: 2px solid #000000;
+    border-right: 2px solid #000000;
     width: 1px;
     height: 90%;
     margin-bottom: auto;
@@ -190,7 +201,7 @@
 }
 
 .basket__inner__container__right__line__bottom {
-    border: 2px solid #000000;
+    border-bottom: 2px solid #000000;
     width: 100%;
 }
 
@@ -250,7 +261,6 @@
 .basket__inner__container__right__result__checkout {
     display: block;
     width: 100%;
-    border: none;
     background: #76CD71;
     border-radius: 50px;
     font-family: 'Raleway';
@@ -262,4 +272,11 @@
     padding: 2.1rem 0;
     cursor: pointer;
     margin-bottom: 10rem;
+    transition: all 0.3s linear;
+    border: 1px solid $accent-color;
+
+    &:hover{
+        background-color: white;
+        color: $accent-color;
+    }
 }
