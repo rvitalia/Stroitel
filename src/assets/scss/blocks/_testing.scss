@@ -97,6 +97,12 @@
         height: 31rem;
         width: 44.4rem;
     }
+
+
+    @include slider-mobile{
+        width: 39.4rem;
+        height: 29rem;
+    }
 }
 
 .testing__inner__tests__item__container__present {
@@ -127,6 +133,11 @@
     @include mobile{
         height: 31rem;
         width: 44.4rem;
+    }
+
+    @include slider-mobile{
+        width: 39.4rem;
+        height: 29rem;
     }
 }
 
