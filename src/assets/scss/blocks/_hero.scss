@@ -2,7 +2,7 @@
     max-height: 61.8rem;
     overflow: hidden;
 
-    @include small-tablet{
+    @include small-tablet {
         max-height: none;
     }
 }
@@ -14,11 +14,11 @@
 .hero__inner__left {
     width: 66.6%;
 
-    @include tablet{
+    @include tablet {
         width: 75%;
     }
 
-    @include small-tablet{
+    @include small-tablet {
         width: 100%;
     }
 }
@@ -41,24 +41,30 @@
         margin-top: 10rem;
     }
 
-    @include for-desktop{
+    @include for-desktop {
         margin-top: 7rem;
         font-size: 3.3rem;
     }
-    @include tablet{
+
+    @include tablet {
         font-size: 2.8rem;
         line-height: 1.7;
     }
-    @include small-tablet{
-        text-align: center;
+
+    @include small-tablet {
+        text-align: left;
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 29rem;
+        padding-left: 3rem;
     }
 }
 
-.hero__inner__img__mobile{
+.hero__inner__img__mobile {
     display: none;
     margin: 0 auto;
 
-    @include small-tablet{
+    @include small-tablet {
         display: block;
         width: 35rem;
         height: auto;
@@ -84,30 +90,37 @@
     @include big-desktop {
         max-width: 71rem;
     }
-    @include for-desktop{
+
+    @include for-desktop {
         font-size: 1.8rem;
         max-width: auto;
     }
-    @include tablet{
+
+    @include tablet {
         font-size: 1.6rem;
     }
-    @include small-tablet{
+
+    @include small-tablet {
         margin-top: -2rem;
         max-width: none;
-        text-align: center;
+        text-align: left;
+        font-size: 16px;
+        line-height: 22px;
+        padding-left: 3rem;
+
     }
-    
+
 }
 
 .hero__inner__left__buttons {
     margin-top: 11rem;
     margin-bottom: 4.9rem;
 
-    @include tablet{
+    @include tablet {
         margin-top: 4rem;
     }
 
-    @include small-tablet{
+    @include small-tablet {
         margin-top: 2rem;
         text-align: center;
         margin-bottom: 0;
@@ -139,11 +152,12 @@
         border-color: $accent-color;
     }
 
-    @include for-desktop{
+    @include for-desktop {
         font-size: 1.5rem;
         padding: 1.5rem 5.5rem;
     }
-    @include mini-mobile{
+
+    @include mini-mobile {
         margin-bottom: 1.5rem;
     }
 
@@ -168,8 +182,9 @@
         border-color: transparent;
     }
 
-    @include mini-mobile{
+    @include mini-mobile {
         margin: 1rem auto 0;
+        min-width: 20.856rem;
     }
 }
 
@@ -179,11 +194,11 @@
 .hero__inner__right {
     width: 33.3%;
 
-    @include tablet{
+    @include tablet {
         width: 25%;
     }
 
-    @include small-tablet{
+    @include small-tablet {
         display: none;
     }
 }
@@ -197,14 +212,14 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    
 
-    @include for-desktop{
+
+    @include for-desktop {
         height: 70rem;
         margin-top: -2rem;
     }
 
-    @include tablet{
+    @include tablet {
         height: 54rem;
     }
 }

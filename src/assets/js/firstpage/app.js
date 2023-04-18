@@ -12,6 +12,21 @@ const swiperadv = new Swiper('.swiper__catalog', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        576: {
+          slidesPerView: 2,
+        },
+
+        850: {
+          slidesPerView: 3,
+        },
+        1300: {
+            slidesPerView: 4,
+          }
+      }
 });
 
 
@@ -40,3 +55,30 @@ modalopenOnce ();
 hoverVideoadventages();
 hoverVideotesting();
 
+function sliderTest(){
+    if(window.innerWidth <= 1440){
+        const swiperadv = new Swiper('.swiper__testing', {
+            slidesPerView: 3,
+            modules: [Navigation],
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                0: {
+                  slidesPerView: 1,
+                },
+                630: {
+                  slidesPerView: 2,
+                },
+        
+                1170: {
+                  slidesPerView: 3,
+                }
+              }
+        });
+    }
+}
+
+sliderTest();

@@ -12,12 +12,36 @@
     line-height: 104px;
     color: #FFFFFF;
     margin-bottom: 5rem;
+
+    @include for-desktop {
+        font-size: 7.7rem;
+    }
+
+    @include tablet {
+        font-size: 5.7rem;
+    }
+
+    @include small-tablet {
+        font-size: 4.3rem;
+    }
+
+    @include mobile {
+        font-size: 3.1rem;
+    }
+
+    @include mini-mobile {
+        font-size: 2.9rem;
+    }
 }
 
 .testing__inner__documents {
     display: flex;
     gap: 2rem;
     margin-bottom: 6rem;
+
+    @include big-desktop {
+        display: none;
+    }
 }
 
 .testing__inner__documents__item {
@@ -25,22 +49,9 @@
     width: 360px;
     height: 573px;
     border: 1px solid $accent-color;
-    position: relative;
 
-    &::after,  &::before{
-        position: absolute;
-        border-radius: 2rem;
-        top: -2px;
-        left: -2px;
-        z-index: -1;
-        content: '';
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-        background: linear-gradient(45deg,#76CD71,#FFFFFF,#CBECCA);
-        animation: animate 20s linear infinite;
-    }
-    &::after{
-        filter: blur(20px);
+    @include big-desktop {
+        width: auto;
     }
 }
 
@@ -48,18 +59,44 @@
 .testing__inner__tests {
     display: flex;
     gap: 2rem;
+
+    @include fhd-desktop {
+        flex-wrap: wrap;
+    }
 }
 
 .testing__inner__tests__item {
+    @include fhd-desktop {
+        margin: 0 auto;
+    }
 
+}
+
+.testing__inner__slider__mobile {
+    display: none;
+
+    @include big-desktop {
+        display: block;
+    }
+}
+
+.swiper__testing {
+    padding-top: 6rem;
 }
 
 .adventages__video__container {}
 
 .testing__inner__tests__item__container {}
 
-.testing__inner__tests__item__container__video {
+.testing__inner__tests__item__container__video {    
+    height:318px;
+    width:486px;
     cursor: pointer;
+
+    @include mobile{
+        height: 31rem;
+        width: 44.4rem;
+    }
 }
 
 .testing__inner__tests__item__container__present {
@@ -86,8 +123,33 @@
         margin-left: 2rem;
         padding-top: 2rem;
     }
-}
-.testing__inner__tests__item__container__present__bg{
-    margin-top: 4rem;
+
+    @include mobile{
+        height: 31rem;
+        width: 44.4rem;
+    }
 }
 
+.testing__inner__tests__item__container__present__bg {
+    margin-top: 4rem;
+
+    @include mobile{
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+.testing-button-next,
+.testing-button-prev {
+    top: 2rem;
+    margin-right: 4rem;
+
+    &::after {
+        content: none;
+    }
+}
+
+.testing-button-prev {
+    left: auto;
+    right: 8rem;
+}

@@ -39,6 +39,11 @@
     @content;
   }
 }
+@mixin slider-mobile {
+  @media (max-width: (476px)) {
+    @content;
+  }
+}
 @mixin mini-mobile {
   @media (max-width: (430px)) {
     @content;

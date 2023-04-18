@@ -1,5 +1,9 @@
 .catalog {
     padding-bottom: 10rem;
+
+    @include mobile{
+        padding-bottom: 3rem;
+    }
 }
 
 .catalog__inner {}
@@ -11,24 +15,43 @@
     font-size: 86px;
     line-height: 104px;
     color: $accent-color;
-    // border: 1px solid #000000;
     max-width: 35rem;
     margin-bottom: -7rem;
-    text-shadow: 1px 0 1px #000,
-        0 1px 1px #000,
-        -1px 0 1px #000,
-        0 -1px 1px #000;
+ 
+    @include fhd-desktop{
+        text-align: center;
+        max-width: none;
+    }
+    @include small-tablet{
+       margin-bottom: -4rem;
+       font-size: 50px;
+    }
 }
 
-.swiper {
+.swiper__catalog {
     padding-top: 11.2rem;
+
+    // @include small-tablet{
+    //     padding-bottom: 11.2rem;
+    // }
 }
 
 .swiper__catalog {}
 
 .swiper-wrapper {}
 
-.swiper-slide {}
+.swiper-slide-catalog {
+    @include mobile{
+        padding: 0 8rem;
+    }
+    @include slider-mobile{
+       padding: 0 4rem; 
+    }
+
+    @include mini-mobile{
+        padding: 0;
+    }
+}
 
 .swiper__slide__inner {
     border: 2px solid #000000;
@@ -36,6 +59,10 @@
     display: flex;
     flex-direction: column;
     padding-left: 2.1rem;
+
+    @include tablet {
+        padding: 0 1.5rem;
+    }
 }
 
 .swiper__slide__inner__favourites {
@@ -150,6 +177,11 @@
     &::after {
         content: none;
     }
+
+    @include small-tablet{
+        // top: 84.5rem;
+        right: 10rem;
+    }
 }
 
 .swiper-catalog-next {
@@ -168,5 +200,10 @@
 
     &::after {
         content: none;
+    }
+
+    @include small-tablet{
+        // top: 84.5rem;
+        right: 3rem;
     }
 }
