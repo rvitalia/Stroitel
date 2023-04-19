@@ -28,6 +28,10 @@
     border-radius: 20px;
     padding: 5.5rem 10.2rem 5.5rem 5.9rem;
     position: relative;
+
+    @include small-tablet{
+        padding: 3rem 4rem;
+    }
 }
 
 .modal__inner__close {
@@ -49,6 +53,11 @@
             stroke: $accent-color;
         }
     }
+
+    @include mobile{
+        top: 0.7rem;
+        right: 1.3rem;
+    }
 }
 
 .modal__inner__title {
@@ -61,6 +70,16 @@
 
     color: #3C3636;
     margin-bottom: 5rem;
+
+    @include small-tablet{
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    @include mobile{
+        font-size: 2rem;
+        line-height: 1.4;
+    }
 }
 
 .modal__inner__form {
@@ -71,7 +90,8 @@
 .modal__inner__form__input {
     border: 1px solid #000000;
     border-radius: 10px;
-    width: 485px;
+    width: calc($index * 25);
+    max-width: 485px;
     height: 56px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -93,6 +113,10 @@
         outline: none;
         border: 2px solid $accent-color;
     }
+
+    @include small-tablet{
+       height: 48px; 
+    }
 }
 
 .modal__inner__form__input+.modal__inner__form__input {
@@ -105,7 +129,6 @@
     background: #76CD71;
     border-radius: 50px;
     margin: 0 auto 3rem;
-    border: none;
     border: 1px solid $accent-color;
 
 
@@ -121,6 +144,12 @@
     &:hover {
         background-color: white;
         color: $accent-color;
+    }
+
+    @include small-tablet{
+        width: 229px;
+        font-size: 16px;
+        height: 50px;
     }
 }
 
@@ -154,6 +183,10 @@
     text-align: center;
     color: #000000;
     margin-bottom: 1.3rem;
+
+    @include small-tablet{
+        display: none;
+    }
 }
 
 .modal__inner__form__wrapper {
@@ -162,6 +195,10 @@
     width: 100%;
     max-width: 23.3rem;     
     margin: 0 auto 3rem;
+
+    @include small-tablet{
+        display: none;
+    }
 }
 
 .date {

@@ -34,7 +34,7 @@
                 <div class="header__inner__logomobile" style="background-image: url(./assets/images/header/logomobile.png);"></div>
             </a>
 
-            <div class="header__inner__burger" style="background-image: url(./assets/images/svg/burger.svg);"></div>
+            <div class="header__inner__burger" id="burger" style="background-image: url(./assets/images/svg/burger.svg);"></div>
 
             <nav class="header__inner__nav">
                 <a href="./index.html" class="header__inner__nav__item">Главная</a>
@@ -63,6 +63,39 @@
                     </svg>
                 </a>
             </div>
+            <div class="menu__burger" id="menu__burger">
+                <nav class="header__inner__nav__burger">
+                    <a href="./index.html" class="header__inner__nav__burger__item">Главная</a>
+                    <a href="#about__us" class="header__inner__nav__burger__item">О нас</a>
+                    <a href="#catalog" class="header__inner__nav__burger__item">Каталог</a>
+                    <a href="#adventages" class="header__inner__nav__burger__item">Характеристики</a>
+                    <a href="#testing" class="header__inner__nav__burger__item">Лицензии</a>
+                </nav>
+    
+                <div class="header__inner__nav__burger__widgets">
+                    <div class="burger__close">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <a href="" class="header__inner__widgets__icon">
+                        <svg class="header__inner__widgets__burger__searchicon">
+                            <use xlink:href="#search"></use>
+                        </svg>
+                    </a>
+                    <a href="./favourites.html" class="header__inner__widgets__icon">
+                        <svg class="header__inner__widgets__burger__favorites">
+                            <use xlink:href="#favorites"></use>
+                        </svg>
+                    </a>
+    
+                    <a href="./basket.html" class="header__inner__widgets__icon">
+                        <svg class="header__inner__widgets__burger__basket">
+                            <use xlink:href="#basket"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div> 
         </div>
     </div>
 </header>

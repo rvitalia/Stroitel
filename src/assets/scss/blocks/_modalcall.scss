@@ -23,9 +23,7 @@
     padding: 0 5rem;
 }
 
-.modalcall__inner {
-
-}
+.modalcall__inner {}
 
 .modallcall__inner__close {
     width: 39px;
@@ -60,6 +58,12 @@
 
     color: #3C3636;
     margin: 0 auto 4.5rem;
+
+    @include small-tablet {
+font-size: 2.5rem;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+}
 }
 
 .modallcall__inner__wrapper {
@@ -67,6 +71,11 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5.5rem;
+
+    @include small-tablet {
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
 }
 
 .modallcall__inner__wrapper__button {
@@ -93,13 +102,24 @@
         color: $accent-color;
     }
 
+    @include small-tablet {
+        margin: 0 auto 1.5rem;
+        padding: 1.5rem 4rem;
+    }
 }
 
 
 .modallcall__inner__wrapper__button+.modallcall__inner__wrapper__button {
     padding: 2.1rem 8.1rem;
     margin-left: 2.4rem;
+
+    @include small-tablet {
+        margin: 0 auto;
+        padding: 1.5rem 4rem;
+    }
 }
+
+
 
 .modallcall__inner__connection {
     max-width: 23rem;
@@ -137,11 +157,17 @@
         fill: black;
         transition: all 0.3s linear;
 
-        &:hover{
+        &:hover {
             fill: #39A9D9;
         }
-        &:hover + b{
+
+        &:hover+b {
             color: #39A9D9;
+        }
+
+        @include small-tablet{
+            width: 80px;
+            height: 80px;
         }
     }
 
@@ -156,17 +182,18 @@
         letter-spacing: -0.04em;
         transition: all 0.3s linear;
 
-        &:hover{
+        &:hover {
             color: #39A9D9;
         }
     }
 }
 
 .green {
-    &:hover{
+    &:hover {
         fill: #0DC143 !important;
     }
-    &:hover + b{
+
+    &:hover+b {
         color: #0DC143 !important;
     }
 }
@@ -184,8 +211,7 @@
     margin: 0 auto 2.5rem;
     display: block;
 
-    &>a{
+    &>a {
         color: #41743E;
     }
 }
-
