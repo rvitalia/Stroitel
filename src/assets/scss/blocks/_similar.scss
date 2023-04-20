@@ -16,6 +16,10 @@
     font-family: inherit;
     color: inherit;
     font-style: normal;
+
+    @include tablet{
+        text-align: center;
+    }
 }
 
 .similar__inner__wrapper {
@@ -23,12 +27,29 @@
     justify-content: space-between;
     gap: 2.5rem;
     margin-bottom: 2.8rem;
+
+    @include for-desktop{
+        flex-wrap: wrap;
+    }
 }
 
 .similar__inner__wrapper__item {
     width: 33.3%;
     height: 453px;
     margin-bottom: 10rem;
+
+    @include for-desktop{
+        margin: 0 auto;
+        height: auto;
+        width: 50%;
+    }
+    @include small-tablet{
+        width: 90%;
+    }
+
+    @include mini-mobile{
+        width: 100%;
+    }
 }
 
 .similar__inner__wrapper__item_background {
@@ -49,6 +70,10 @@
     font-family: inherit;
     color: inherit;
     font-style: normal;
+
+    @include mini-mobile{
+        font-size: 3rem;
+    }
 }
 
 .similar__inner__wrapper__item__price {
@@ -58,4 +83,8 @@
     font-family: inherit;
     color: inherit;
     font-style: normal;
+
+    @include mini-mobile{
+        font-size: 3rem;
+    }
 }

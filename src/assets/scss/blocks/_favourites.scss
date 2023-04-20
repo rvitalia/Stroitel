@@ -2,7 +2,12 @@
     padding-top: 8rem;
 }
 .favourites__inner{
-    padding-bottom: 20rem;;
+    padding-bottom: 20rem;
+
+    @include for-desktop{
+        padding-bottom: 5rem;
+
+    }
 }
 .favourites__inner__wrapper__item__background {
     border: none;
@@ -44,6 +49,15 @@
     &:hover{
         color: white;
         background-color: $accent-color;
+    }
+
+    @include small-tablet{
+        width: 60%;
+        margin: 3.5rem auto;
+    }
+    @include mobile{
+        width: 80%;
+        margin: 3.5rem auto;
     }
 }
 .heart{
