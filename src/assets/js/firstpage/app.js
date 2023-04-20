@@ -1,5 +1,6 @@
-import Swiper, { Pagination, Navigation } from 'swiper';
+import Swiper, { Navigation } from 'swiper';
 import { burger } from './burger';
+import { favourite } from './favourite';
 import { hoverVideoadventages, hoverVideotesting } from './hovervideo';
 import { modalopen } from './modal';
 
@@ -49,13 +50,15 @@ function modalopenOnce() {
 
   });
 }
-
+//включен поля поиска
 searchInput();
+//открытие модального окна по клику
 modalopen();
+//однократный запуск модального окна по пролистыванию
 modalopenOnce();
-
-  hoverVideoadventages();
-  hoverVideotesting();
+//запуск вмдео двух категорий по наведению и по клику для мобильных
+hoverVideoadventages();
+hoverVideotesting();
 
 
 
@@ -84,6 +87,9 @@ function sliderTest() {
     });
   }
 }
-
+//слайдер для мобильного раздел документы и испытания
 sliderTest();
+//вызов бургера
 burger();
+//покраска середечек в акцентный цыет
+favourite();

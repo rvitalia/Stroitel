@@ -21,6 +21,7 @@
     z-index: 1;
     fill: $accent-color;
     stroke: none;
+    transition: all 0.3s linear;
 }
 
 .favourites__inner__item__button {
@@ -45,7 +46,7 @@
         background-color: $accent-color;
     }
 }
-.nored{
+.heart{
     fill: none;
     stroke: black;
 }

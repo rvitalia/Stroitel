@@ -11,6 +11,14 @@
     </symbol>
 </svg>
 <svg display="none">
+    <symbol id="close" viewBox="0 0 24 24">
+
+        <path d="M5 5L19 19M5 19L19 5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+
+    </symbol>
+</svg>
+<svg display="none">
     <symbol id="favorites" viewBox="0 0 27 24">
 
         <path
@@ -34,7 +42,7 @@
                 <div class="header__inner__logomobile" style="background-image: url(./assets/images/header/logomobile.png);"></div>
             </a>
 
-            <div class="header__inner__burger" style="background-image: url(./assets/images/svg/burger.svg);"></div>
+            <div class="header__inner__burger" id="burger" style="background-image: url(./assets/images/svg/burger.svg);"></div>
 
             <nav class="header__inner__nav">
                 <a href="./index.html" class="header__inner__nav__item">Главная</a>
@@ -62,6 +70,42 @@
                         <use xlink:href="#basket"></use>
                     </svg>
                 </a>
+            </div>
+        </div>
+        <div class="menu__burger" id="menu__burger">
+            <div class="menu__burger__wrapper">
+                <div class="burger__close">
+                    <svg data-close>
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </div>
+                <nav class="header__inner__nav__burger">
+                    <a href="./index.html" class="header__inner__nav__burger__item" data-select>Главная</a>
+                    <a href="#about__us" class="header__inner__nav__burger__item" data-select>О нас</a>
+                    <a href="#catalog" class="header__inner__nav__burger__item" data-select>Каталог</a>
+                    <a href="#adventages" class="header__inner__nav__burger__item" data-select>Характеристики</a>
+                    <a href="#testing" class="header__inner__nav__burger__item" data-select>Лицензии</a>
+                </nav>
+    
+                <div class="header__inner__nav__burger__widgets">
+                    <a href="" >
+                        <svg class="header__inner__widgets__burger" data-search="icon">
+                            <use xlink:href="#search"></use>
+                        </svg>
+                    </a>
+                    <a href="./favourites.html" >
+                        <svg class="header__inner__widgets__burger">
+                            <use xlink:href="#favorites"></use>
+                        </svg>
+                    </a>
+    
+                    <a href="./basket.html">
+                        <svg class="header__inner__widgets__burger">
+                            <use xlink:href="#basket"></use>
+                        </svg>
+                    </a>
+                </div>
+                <input type="text" class="header__inner__burger__widgets__searchblok" placeholder="Поиск товара" data-search="input">
             </div>
         </div>
     </div>

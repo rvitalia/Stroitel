@@ -384,7 +384,9 @@
         display: block;
         margin: 0 auto;
     }
-
+    @include small-tablet{
+        text-align: center;
+    }
     @include mobile{
         font-size: 1.4rem;
     }

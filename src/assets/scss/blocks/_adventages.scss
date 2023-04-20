@@ -1,4 +1,12 @@
-.adventages {}
+.adventages {
+    margin-top: -12rem;
+    @include small-tablet{
+        margin-top: -5rem;
+    }
+    @include mini-mobile{
+        margin-top: 0;
+    }
+}
 
 .adventages__inner {
     position: relative;
@@ -39,6 +47,7 @@
 .adventages__inner__row {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
 
     @include fhd-desktop {
         flex-wrap: wrap;
@@ -50,6 +59,7 @@
     flex-direction: column;
     gap: 2rem;
     max-width: 33.1%;
+    overflow: hidden;
 
     @include fhd-desktop {
         max-width: 40%;

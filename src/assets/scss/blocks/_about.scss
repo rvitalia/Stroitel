@@ -44,7 +44,7 @@
 .about__inner__wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 2.3rem;
+    //gap: 2.3rem;
 
     @include  tablet{
         flex-wrap: wrap;
@@ -54,7 +54,7 @@
 .about__inner__wrapper__item {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 49.5%;
     align-items: flex-start;
 
     @include  tablet{
@@ -135,7 +135,7 @@
     line-height: 31px;
     letter-spacing: -0.04em;
     margin-bottom: 4.3rem;
-    color: #1B1B1B;
+    color: rgba(27, 27, 27, 0.75);
 
     @include big-desktop{
         max-width: 63.5rem;

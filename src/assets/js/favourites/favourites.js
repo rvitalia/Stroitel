@@ -1,3 +1,6 @@
+import { burger } from "../firstpage/burger";
+
+
 let search = document.querySelector('#header__search');
 let widgets = document.querySelector('#widgets');
 
@@ -12,6 +15,8 @@ let favourites = document.querySelectorAll('#favourite');
 favourites.forEach(element => {
   element.addEventListener('click', ()=>{
      console.log(element);
-    element.classList.toggle('nored'); 
+    element.classList.toggle('heart'); 
   })
 });
+
+burger();

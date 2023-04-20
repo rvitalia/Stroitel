@@ -1,4 +1,5 @@
 import { Splide } from "@splidejs/splide";
+import { burger } from "../firstpage/burger";
 import { searchInput } from "../firstpage/search";
 
 var splide = new Splide('#main-carousel', {
@@ -54,3 +55,5 @@ favourites.forEach(element => {
     element.classList.toggle('red'); 
   })
 });
+
+burger();

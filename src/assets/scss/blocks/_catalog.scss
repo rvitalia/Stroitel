@@ -16,15 +16,18 @@
     line-height: 104px;
     color: $accent-color;
     max-width: 35rem;
-    margin-bottom: -7rem;
+    margin-bottom: -9rem;
  
     @include fhd-desktop{
-        text-align: center;
+        //text-align: center;
         max-width: none;
     }
     @include small-tablet{
-       margin-bottom: -4rem;
+      // margin-bottom: -4rem;
        font-size: 50px;
+    }
+    @include mobile{
+        font-size: 3rem;
     }
 }
 
@@ -159,7 +162,7 @@
 }
 
 .swiper-catalog-prev {
-    top: 6.5rem;
+    top: 4.1rem;
     right: 7rem;
     left: auto;
 
@@ -185,7 +188,7 @@
 }
 
 .swiper-catalog-next {
-    top: 6.5rem;
+    top: 4.1rem;
 
 
     &>svg {
@@ -206,4 +209,7 @@
         // top: 84.5rem;
         right: 3rem;
     }
+}
+.heartaccent{
+    fill: $accent-color;
 }

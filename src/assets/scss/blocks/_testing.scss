@@ -1,5 +1,6 @@
 .testing {
     padding: 3.1rem 0 7.5rem;
+    @include bg-cover;
 }
 
 .testing__inner {}
@@ -15,10 +16,12 @@
 
     @include for-desktop {
         font-size: 7.7rem;
+        margin-bottom: 3rem;
     }
 
     @include tablet {
         font-size: 5.7rem;
+        margin-bottom: 2rem;
     }
 
     @include small-tablet {
@@ -27,6 +30,8 @@
 
     @include mobile {
         font-size: 3.1rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
     }
 
     @include mini-mobile {
@@ -90,7 +95,8 @@
 
 .testing__inner__tests__item__container__video {    
     height:318px;
-    width:486px;
+    width: 100%;
+    max-width:486px;
     cursor: pointer;
 
     @include mobile{
@@ -103,6 +109,10 @@
         width: 39.4rem;
         height: 29rem;
     }
+
+    @include mini-mobile{
+        width: 35.4rem;
+    }
 }
 
 .testing__inner__tests__item__container__present {
@@ -110,7 +120,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 48.6rem;
+    width: 100%;
+    max-width:486px;
     height: 31.8rem;
     position: absolute;
     top: 0;
@@ -139,6 +150,9 @@
         width: 39.4rem;
         height: 29rem;
     }
+    @include mini-mobile{
+        width: 35.4rem;
+    }
 }
 
 .testing__inner__tests__item__container__present__bg {
@@ -147,6 +161,10 @@
     @include mobile{
         height: 10rem;
         width: 10rem;
+    }
+    @include mini-mobile{
+        width: 8rem;
+        height: 8rem;
     }
 }
 

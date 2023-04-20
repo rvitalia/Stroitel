@@ -60,6 +60,12 @@
     @include bg-cover;
     cursor: pointer;
     margin-right: 3.123rem;
+
+    &>svg{
+        stroke: black;
+        width: 2.9rem;
+        height: 2.9rem;
+    }
 }
 
 .basket__inner__container__left__item__preview {
