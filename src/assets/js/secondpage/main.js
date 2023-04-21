@@ -1,6 +1,8 @@
 import { Splide } from "@splidejs/splide";
 import { burger } from "../firstpage/burger";
 import { searchInput } from "../firstpage/search";
+import Swiper, { Navigation } from 'swiper';
+
 
 var splide = new Splide('#main-carousel', {
   // width: 694,
@@ -57,3 +59,36 @@ favourites.forEach(element => {
 });
 
 burger();
+
+function sliderSimilar() {
+  if (window.innerWidth <= 1150) {
+    const swipersim = new Swiper('.swiper__similar', {
+      slidesPerView: 1,
+      modules: [Navigation],
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        }
+      }
+    });
+  }
+}
+//слайдер для мобильного раздел документы и испытания
+sliderSimilar();
+
+//делаем перемещение блока через js при разрешении меньше 992px
+
+function contentMove (){
+  let content = document.querySelector('[data-content]');
+  let  blokToInsert = document.querySelector('[data-insert]');
+  if (window.innerWidth <= 992) {
+    blokToInsert.appendChild(content);
+  }
+}
+
+contentMove ();

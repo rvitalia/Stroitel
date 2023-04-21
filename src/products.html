@@ -3,7 +3,7 @@ layout: second
 title: Document | Home
 ---
 <section class="productinfo">
-    <div class="container">
+    <div class="container container-product">
 
         <div class="productinfo__wrapper">
             <a href="" class="productinfo__inner__back">
@@ -11,11 +11,16 @@ title: Document | Home
             </a>
             <div class="productinfo__inner">
                 <div class="productinfo__inner__left">
-                    <div id="main-carousel" class="splide" aria-label="My Awesome Gallery">
+                    <h2 class="productinfo__inner__right__title productinfo__inner__right__title__mobile">Полистиролбетон</h2>
+                    <div id="main-carousel" class="splide splide-main" aria-label="My Awesome Gallery">
                         <div class="splide__track">
-                            <ul class="splide__list">
+                            <ul class="splide__list splide__list__main">
                                 <li class="splide__slide splide__slide__main">
                                     <div class="splide__slide__main__wrapper">
+                                        <svg class="header__inner__widgets__favorites productinfo__inner__right__buttons__favourites --mobile"
+                                        id="favourite">
+                                        <use xlink:href="#favorites"></use>
+                                    </svg>
                                         <img src="./assets/images/products/blockbig.png" alt="">
                                     </div>
                                 </li>
@@ -37,22 +42,26 @@ title: Document | Home
                             </ul>
                         </div>
                     </div>
-    
+
                     <ul id="thumbnails" class="thumbnails">
-                        <li class="thumbnail">
+                        <li class="thumbnail thumbnail__main">
                             <img src="./assets/images/products/blocksmall1.png" alt="">
                         </li>
-                        <li class="thumbnail">
+                        <li class="thumbnail thumbnail__main">
                             <img src="./assets/images/products/blocksmall2.png" alt="">
                         </li>
-                        <li class="thumbnail">
+                        <li class="thumbnail thumbnail__main">
                             <img src="./assets/images/products/blocksmall3.png" alt="">
                         </li>
-                        <li class="thumbnail">
+                        <li class="thumbnail thumbnail__main">
                             <img src="./assets/images/products/blocksmall4.png" alt="">
                         </li>
                     </ul>
-    
+
+                    <div class="content__loaded" data-insert>
+
+                    </div>
+
                     <h5 class="productinfo__inner__left__title">Технические особенности</h5>
                     <div class="productinfo__inner__left__data">
                         <span class="productinfo__inner__left__data__item">Длина кабеля </span>
@@ -67,31 +76,36 @@ title: Document | Home
                         <span class="productinfo__inner__left__data__digit">3</span>
                     </div>
                     <div class="productinfo__inner__left__data">
-                        <span class="productinfo__inner__left__data__item">Мощность устройства  </span>
+                        <span class="productinfo__inner__left__data__item">Мощность устройства </span>
                         <span class="productinfo__inner__left__data__digit">2000 Вт</span>
                     </div>
                 </div>
-                <div class="productinfo__inner__right">
+                <div class="productinfo__inner__right" data-content>
                     <h2 class="productinfo__inner__right__title">Полистиролбетон</h2>
-                    <span class="productinfo__inner__right__data">Когда-то давно в мире строительства появился новый материал - полистиролбетон. Это было что-то совершенно новое, потому что этот материал сочетал в себе прочность бетона и изоляционные свойства полистирола.</span>
+                    <span class="productinfo__inner__right__data">Когда-то давно в мире строительства появился новый
+                        материал - полистиролбетон. Это было что-то совершенно новое, потому что этот материал сочетал в
+                        себе прочность бетона и изоляционные свойства полистирола.</span>
                     <div class="productinfo__inner__right__data__container">
                         <select name="" id="" class="productinfo__inner__right__size" size="1">
                             <option disabled selected>Размер</option>
                             <option value="size1">125х63х85</option>
                             <option value="size2">125х63х85</option>
                             <option value="size3">125х63х85</option>
-                        </select> 
+                        </select>
                         <div class="productinfo__inner__right__availibility">
-                            В наличии <span class="productinfo__inner__right__availibility__count">5632</span>
+                            В наличии <span class="productinfo__inner__right__availibility__count">есть</span>
                         </div>
-                        <a class="productinfo__inner__right__availibility productinfo__inner__right__noneavailibility" href="">
+                        <a class="productinfo__inner__right__availibility productinfo__inner__right__noneavailibility"
+                            href="">
                             Предзаказ
                         </a>
                     </div>
-                    
+
                     <div class="productinfo__inner__right__parametrs">
-                        <div class="productinfo__inner__right__parametrs__height"><b>Высота</b><input class="productinfo__inner__right__parametrs__input"></div>
-                        <div class="productinfo__inner__right__parametrs__width"><b>Ширина</b><input class="productinfo__inner__right__parametrs__input"></div>
+                        <div class="productinfo__inner__right__parametrs__height"><b>Высота</b><input
+                                class="productinfo__inner__right__parametrs__input"></div>
+                        <div class="productinfo__inner__right__parametrs__width"><b>Ширина</b><input
+                                class="productinfo__inner__right__parametrs__input"></div>
                     </div>
                     <div class="productinfo__inner__right__dataprice">
                         <div class="productinfo__inner__right__dataprice__minus" data-operation="minus">-</div>
@@ -100,8 +114,10 @@ title: Document | Home
                         <div class="productinfo__inner__right__dataprice__price">9 990 р.</div>
                     </div>
                     <div class="productinfo__inner__right__buttons">
-                        <button type="button" class="productinfo__inner__right__battons__addbasket">Добавить в корзину</button>
-                        <svg class="header__inner__widgets__favorites productinfo__inner__right__buttons__favourites" id="favourite">
+                        <button type="button" class="productinfo__inner__right__battons__addbasket">Добавить в
+                            корзину</button>
+                        <svg class="header__inner__widgets__favorites productinfo__inner__right__buttons__favourites"
+                            id="favourite">
                             <use xlink:href="#favorites"></use>
                         </svg>
                     </div>
@@ -123,7 +139,7 @@ title: Document | Home
                         <span class="productinfo__inner__left__data__digit">660 г</span>
                     </div>
                     <div class="productinfo__inner__left__data">
-                        <span class="productinfo__inner__left__data__item">Страна производства  </span>
+                        <span class="productinfo__inner__left__data__item">Страна производства </span>
                         <span class="productinfo__inner__left__data__digit">Китай</span>
                     </div>
                     <div class="productinfo__inner__left__data">
@@ -146,7 +162,7 @@ title: Document | Home
                         <span class="productinfo__inner__left__data__item">Вес товара с упаковкой (г)</span>
                         <span class="productinfo__inner__left__data__digit">900 г</span>
                     </div>
-    
+
                 </div>
             </div>
         </div>
@@ -155,10 +171,10 @@ title: Document | Home
 </section>
 
 <section class="similar">
-    <div class="container">
+    <div class="container  container-product">
         <div class="similar__inner">
-            <h1 class="similar__inner__title">Похожие товары</h1>
-            <div class="similar__inner__wrapper">
+            <h1 class="similar__inner__title similar__inner__title--center">Похожие товары</h1>
+            <div class="similar__inner__wrapper similar__inner__wrapper--none">
                 <div class="similar__inner__wrapper__item">
                     <div class="similar__inner__wrapper__item_background">
                         <img src="./assets/images/similar/135843-PhotoRoom.png" alt="">
@@ -180,6 +196,46 @@ title: Document | Home
                     <h5 class="similar__inner__wrapper__item__subtitle">Полистиролбетон</h5>
                     <span class="similar__inner__wrapper__item__price">9 900 р.</span>
                 </div>
+            </div>
+
+            <div class="swiper swiper__similar">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="similar__inner__wrapper__item similar__inner__wrapper__item--mobile">
+                            <div class="similar__inner__wrapper__item_background similar__inner__wrapper__item_background--mobile">
+                                <img src="./assets/images/similar/135843-PhotoRoom.png" alt="">
+                            </div>
+                            <h5 class="similar__inner__wrapper__item__subtitle">Полистиролбетон</h5>
+                            <span class="similar__inner__wrapper__item__price">9 900 р.</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="similar__inner__wrapper__item similar__inner__wrapper__item--mobile">
+                            <div class="similar__inner__wrapper__item_background similar__inner__wrapper__item_background--mobile">
+                                <img src="./assets/images/similar/135843-PhotoRoom.png" alt="">
+                            </div>
+                            <h5 class="similar__inner__wrapper__item__subtitle">Полистиролбетон</h5>
+                            <span class="similar__inner__wrapper__item__price">9 900 р.</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="similar__inner__wrapper__item similar__inner__wrapper__item--mobile">
+                            <div class="similar__inner__wrapper__item_background similar__inner__wrapper__item_background--mobile">
+                                <img src="./assets/images/similar/135843-PhotoRoom.png" alt="">
+                            </div>
+                            <h5 class="similar__inner__wrapper__item__subtitle">Полистиролбетон</h5>
+                            <span class="similar__inner__wrapper__item__price">9 900 р.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev button-prev-similar"></div>
+                <div class="swiper-button-next button-next-similar"></div>
             </div>
         </div>
     </div>
