@@ -52,11 +52,11 @@
     }
 
     @include small-tablet{
-        width: 60%;
+        //width: 60%;
         margin: 3.5rem auto;
     }
     @include mobile{
-        width: 80%;
+       // width: 80%;
         margin: 3.5rem auto;
     }
 }
