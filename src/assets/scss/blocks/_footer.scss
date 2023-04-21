@@ -5,6 +5,7 @@ footer {
 }
 
 .footer__inner {
+    padding-top: 2rem;
 
     @include mobile{
         padding-left: 3rem;
@@ -29,8 +30,9 @@ footer {
         @include small-tablet{
             min-width: 21.5rem;
         }
-        @include slider-mobile{
+        @include mobile{
             min-width: auto;
+            max-width: 11rem;
         }
     }
 }
@@ -116,7 +118,7 @@ footer {
     &:last-child {
         padding-bottom: 0;
     }
-    @include slider-mobile{
+    @include mobile{
         hyphens: manual;   
         white-space: normal;
     }
@@ -161,9 +163,14 @@ footer {
 .footer__inner__bottm__social__item{
     width: 3.1rem;
     height: 3.1rem;
-
+    transition: all 0.3s linear;
+    
     &:not(:last-child){
         margin-right: calc($index * 1.9);
+    }
+
+    &:hover{
+        transform: scale(1.1);
     }
 }
 .footer__inner__column__logo__mobile{
