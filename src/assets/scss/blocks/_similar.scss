@@ -1,5 +1,9 @@
 .similar {
     padding-bottom: 10rem;
+
+    @include mobile{
+        padding-bottom: 3rem;
+      }
 }
 
 .similar__inner {
@@ -24,6 +28,10 @@
 .similar__inner__title--center{
     @include big-desktop{
         text-align: center;
+    }
+
+    @include mobile{
+        font-size: 3rem;
     }
 }
 
@@ -70,6 +78,10 @@
         max-width: 80rem;
         height: auto;
     }
+
+    @include mobile{
+        width: calc(100% - 6rem);
+    }
 }
 
 .similar__inner__wrapper__item_background {
@@ -88,6 +100,13 @@
         &>img{
             padding: 0 3rem;
         }
+
+        @include mobile{
+            min-height: 35rem;
+        }
+        @include slider-mobile{
+            min-height: auto;
+        }
     }
 }
 
@@ -98,10 +117,12 @@
     padding-top: 2.8rem;
     font-family: inherit;
     color: inherit;
-    font-style: normal;
-
-    @include mini-mobile{
+    font-style: normal; 
+    @include mobile{
         font-size: 3rem;
+    }
+    @include mini-mobile{
+        font-size: 2.5rem;
     }
 }
 
@@ -113,8 +134,11 @@
     color: inherit;
     font-style: normal;
 
-    @include mini-mobile{
+    @include mobile{
         font-size: 3rem;
+    }
+    @include mini-mobile{
+        font-size: 2.5rem;
     }
 }
 
@@ -132,8 +156,22 @@
 .button-prev-similar{
     top: 37%;
     left: 5%;
+
+    @include mobile{
+        left:0;
+    }
+    @include slider-mobile{
+        top: 30%;
+    }
 }
 .button-next-similar{
     top: 37%;
     right: 5%;
+
+    @include mobile{
+        right: 0;
+    }
+    @include slider-mobile{
+        top: 30%;
+    }
 }

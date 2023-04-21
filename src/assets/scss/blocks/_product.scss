@@ -1,6 +1,10 @@
 .productinfo {
   padding-top: 0;
   padding-bottom: 9.6rem;
+
+  @include mobile{
+    padding-bottom: 3rem;
+  }
 }
 
 .productinfo__wrapper {
@@ -94,6 +98,10 @@
     height: 40rem;
   }
 
+  @include mobile{
+    height: auto;
+  }
+
   &>img {
     object-fit: cover;
     width: 615px;
@@ -107,6 +115,10 @@
 
     @include for-desktop {
       max-width: 45rem;
+    }
+
+    @include mobile{
+      height: auto;
     }
   }
 }
@@ -160,9 +172,31 @@
   @include big-desktop {
     width: 100%;
     max-width: 10rem;
-    height: auto;
+    height: 100%;
+    max-height: 8rem;
+  }
+  @include mobile {
+    max-height: 7rem;
   }
 
+  @include mini-mobile{
+    max-height: 5rem;
+  }
+
+  &>img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+
+
+    // @include mobile{
+    //   max-width: 5rem;
+    // }
+    // @include mini-mobile{
+    //   max-width: 4rem;
+    // }
+  }
 }
 
 .splide__arrow {
@@ -175,7 +209,18 @@
     height: 3.5rem;
   }
 
+  @include big-desktop{
+    top: 111%;
+  }
+
   @include for-desktop {
+    top: 113%;
+  }
+
+  @include mobile{
+    top: 115%;
+  }
+  @include slider-mobile{
     top: 117%;
   }
 }
@@ -342,7 +387,7 @@ justify-content: center;
 
 .productinfo__inner__right__parametrs__height,
 .productinfo__inner__right__parametrs__width {
-  height: 5rem;
+  height: 6rem;
   width: 100%;
   max-width: 50%;
   display: flex;
@@ -365,19 +410,20 @@ justify-content: center;
 
 .productinfo__inner__right__parametrs__input {
   width: 132px;
-  //height: 1px;
+  height: 3rem;
   border: none;
   border-bottom: 1px solid #D9D9D9;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 0.8rem;
+  font-size: 2rem;
 }
 
 .productinfo__inner__right__dataprice {
   display: flex;
   align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 100%;
   max-width: 47.4rem;
 
@@ -386,7 +432,7 @@ justify-content: center;
   }
 
   @include for-desktop {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
   }
 
   @include tablet{
@@ -541,7 +587,7 @@ justify-content: center;
 
   @include big-desktop {
     width: 4rem;
-    height: auto;
+    //height: auto;
   }
   @include tablet{
    display: none;
@@ -556,6 +602,13 @@ justify-content: center;
     right: 1rem;
     top: -4.5rem;
   }
+
+  @include mobile{
+    top: 0.5rem;
+    right: 0rem;
+    width: 4rem;
+    height: 3rem;
+  }
 }
 
 .red {
@@ -567,5 +620,8 @@ justify-content: center;
 
   @include tablet {
     display: block;
+  }
+  @include mobile{
+    font-size: 2.5rem;
   }
 }
