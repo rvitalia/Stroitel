@@ -1,8 +1,10 @@
 import Swiper, { Navigation } from 'swiper';
+import { hideAttr } from './attributes';
 import { burger } from './burger';
 import { favourite } from './favourite';
 import { hoverVideoadventages, hoverVideotesting } from './hovervideo';
 import { modalopen } from './modal';
+import { removeClass } from './removeclass';
 
 import { searchInput } from "./search";
 
@@ -57,7 +59,7 @@ modalopen();
 //однократный запуск модального окна по пролистыванию
 modalopenOnce();
 //запуск вмдео двух категорий по наведению и по клику для мобильных
-hoverVideoadventages();
+//hoverVideoadventages();
 hoverVideotesting();
 
 
@@ -93,3 +95,15 @@ sliderTest();
 burger();
 //покраска середечек в акцентный цыет
 favourite();
+
+//скрытие атрибутов в каталоге товаров
+hideAttr();
+
+//убираем класс отображения для страницы single-product.
+
+
+
+removeClass('.single-product-data', 'single-product-data');
+removeClass('.single-product-data', 'single-product-data');
+
+

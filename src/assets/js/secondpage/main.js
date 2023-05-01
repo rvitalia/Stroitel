@@ -2,6 +2,9 @@ import { Splide } from "@splidejs/splide";
 import { burger } from "../firstpage/burger";
 import { searchInput } from "../firstpage/search";
 import Swiper, { Navigation } from 'swiper';
+import { removeClass } from "../firstpage/removeclass";
+import { hideAttrleft, hideAttrright } from "../firstpage/attributes";
+import { counter } from "./counter";
 
 
 var splide = new Splide('#main-carousel', {
@@ -92,3 +95,15 @@ function contentMove (){
 }
 
 contentMove ();
+// удаляем классы отображения товаров каталога
+removeClass('.catalog__value', 'catalog__value');
+removeClass('.catalog__label', 'catalog__label');
+removeClass('.catalog_attributes', 'catalog_attributes');
+
+//скрываем ненужные атрибуты в таблице слева
+hideAttrleft();
+//скрываем ненужные атрибуты в таблице справа
+hideAttrright();
+
+//счетчик
+counter();
