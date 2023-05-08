@@ -5,6 +5,8 @@ import Swiper, { Navigation } from 'swiper';
 import { removeClass } from "../firstpage/removeclass";
 import { hideAttrleft, hideAttrright } from "../firstpage/attributes";
 import { counter } from "./counter";
+import { spliting } from "./split";
+import { hideAttr } from "./related";
 
 
 var splide = new Splide('#main-carousel', {
@@ -50,7 +52,7 @@ splide.mount();
 
 
 
-searchInput();
+// searchInput();
 
 let favourites = document.querySelectorAll('#favourite');
 // console.log(favourites);
@@ -63,26 +65,6 @@ favourites.forEach(element => {
 
 burger();
 
-function sliderSimilar() {
-  if (window.innerWidth <= 1150) {
-    const swipersim = new Swiper('.swiper__similar', {
-      slidesPerView: 1,
-      modules: [Navigation],
-      spaceBetween: 30,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        }
-      }
-    });
-  }
-}
-//слайдер для мобильного раздел документы и испытания
-sliderSimilar();
 
 //делаем перемещение блока через js при разрешении меньше 992px
 
@@ -94,7 +76,7 @@ function contentMove (){
   }
 }
 
-contentMove ();
+
 // удаляем классы отображения товаров каталога
 removeClass('.catalog__value', 'catalog__value');
 removeClass('.catalog__label', 'catalog__label');
@@ -107,3 +89,37 @@ hideAttrright();
 
 //счетчик
 counter();
+
+//подставка значений в контейнеры и корректировки
+spliting();
+//скрываем атрибуты
+hideAttr();
+
+
+contentMove ();
+
+//запуск слайдера 
+const swiperrelated = new Swiper('.swiper__catalog', {
+  slidesPerView: 4,
+  spaceBetween: 27,
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+
+    850: {
+      slidesPerView: 3,
+    },
+    1300: {
+      slidesPerView: 4,
+    }
+  }
+});
